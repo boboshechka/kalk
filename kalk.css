@@ -16,7 +16,7 @@ body {
     background-color: gray;
     border-radius: 20px;
     height: 480px;
-    width: 550px;
+    width: 570px;
 }
 .box__btn {
     position: relative;
@@ -35,7 +35,7 @@ body {
     position: relative;
     top: 20px;
     width: 91%;
-    margin-left: 25px;
+    margin-left: 5%;
 }
 .box__top {
     height: 50px;
@@ -51,9 +51,21 @@ body {
     align-items: center;
     margin-right: 10px;
 }
+.box__main {
+    display: flex;
+}
 .box__main-left {
     display: flex;
     width: 290px;
+    height: 80%;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.box__main-right {
+    display: flex;
+    width: 240px;
     height: 80%;
     margin-top: 15px;
     flex-wrap: wrap;
