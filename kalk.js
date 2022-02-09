@@ -11,18 +11,17 @@ const box = document.querySelector('.box')
 const mainLeft = document.querySelector('.box__main-left')
 const mainRight = document.querySelector('.box__main-right')
 
-for(let i = 0; i < 2 ; i++) {
-    boxBtn.addEventListener('click', () => {
 
-        step % 2 === 0 ? lol() : gug()
+    boxBtn.addEventListener('click', () => {
+        step % 2 === 0 ? deploying() : folding()
+        step++;
         console.log('s')
     })
-}
 
 
 
-function lol() {
-    if (box.style.width = 570 + 'px'){
+
+function deploying() {
         let w = 330;
         box.style.width = w + 'px';
         mainRight.style.display = 'none';
@@ -30,16 +29,14 @@ function lol() {
         mainLeft.style.marginRight = 0 + 'px';
 // можно как то реализовать через css типо :active или просто еще один класс дописать чтобы не было постоянного style. ...
         return;
-    }
 }
-function gug() {
-    if (box.style.width = 330 + 'px') {
+function folding() {
+
         let v = 570;
         box.style.width = v + 'px';
         mainRight.style.display = 'flex';
         return;
 
-    }
 }
 
 //можно ли сделать функцию или что-то которая выводит символы из boxes и вствляет в массив
